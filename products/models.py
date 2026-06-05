@@ -1,6 +1,4 @@
 from django.db import models
-from django.utils import timezone
-import datetime
 
 class Product(models.Model):
     name = models.CharField(max_length=200)
@@ -11,7 +9,7 @@ class Product(models.Model):
     category = models.ForeignKey('Category', on_delete=models.SET_NULL, null=True)
     tags = models.ManyToManyField('Tag')
     def __str__(self):
-        return self.product_name
+        return self.name
     
 
 class Tag(models.Model):
@@ -23,3 +21,6 @@ class Category(models.Model):
     name = models.CharField(max_length=200)
     def __str__(self):
         return self.name
+    class Meta:
+        verbose_name = "Category"
+        verbose_name_plural = "Categories"
