@@ -10,26 +10,36 @@
 
     <h1>Product Catalog</h1>
     <form action="{% url 'product_list' %}" method="get">
-        <label for="search">Search:</label>
-        <input type="search" name="q" id="search" placeholder="Search here..." value="{{ request.GET.q }}">
-        <label for="category-select">Category:</label>
-        <select id="category-select" name="category">
-            <option value="" name="category">All Categories</option>
-            {% for category in categories %}
-                <option value="{{ category.id }}" {% if request.GET.category == category.id|stringformat:"s" %}selected{% endif %}>
-                    {{ category.name }}</option>
-            {% endfor %}
-        </select>
+        <div>
+            {{ form.search.label_tag }}
+            {{ form.search }}
+    
+            {{ form.category.label_tag }}
+            {{ form.category }}
+
+            {{ form.tags.label_tag }}
+            {{ form.tags }}
+        </div>
         <button type="submit">Search</button>
     </form>
+    {% if products %}
     <ul>
         {% for product in products %}
             <li>
-                <p>{{ product.name }}</p>
+                <strong>{{ product.name }}</strong>
+                <p>{{ product.description }}</p>
+                <p>Category: {{ product.category.name }}</p>
+                <p>Tags: {% for tag in product.tags.all %}{{ tag.name }}
+                    {% if not forloop.last %}, {% endif %}{% endfor %}</p>
 
     
             </li>
         {% endfor %}
+
+    </ul>    
+    {% else %}
+        <p>No products found.</p>
+    {% endif %}
 
 
 </body>
