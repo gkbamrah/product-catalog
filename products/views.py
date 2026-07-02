@@ -2,10 +2,10 @@ from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from django.shortcuts import render
-from .models import Product
+from .models import Category, Product
 from django.db.models import Q
 from .forms import ProductSearchForm
-from .serializers import ProductSerializer
+from .serializers import CategorySerializer, ProductSerializer
 
 
 def product_list(request):
@@ -53,4 +53,10 @@ def product_list_api(request):
         products = products.filter(tags__in=tags).distinct()
         
     serializer = ProductSerializer(products, many=True)
+    return Response(serializer.data, status=status.HTTP_200_OK)
+
+@api_view(["GET"])
+def category_list_api(request):
+    categories = Category.objects.all()
+    serializer = CategorySerializer(categories, many=True)
     return Response(serializer.data, status=status.HTTP_200_OK)
