@@ -1,0 +1,408 @@
+[
+{
+  "model": "products.product",
+  "pk": 1,
+  "fields": {
+    "name": "Wireless Headphones",
+    "post_date": "2026-06-05T02:31:56Z",
+    "price": "100.00",
+    "description": "Premium over-ear headphones with active noise cancellation and 30-hour battery life for an immersive listening experience.",
+    "category": 1,
+    "tags": [
+      4,
+      6,
+      7
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 2,
+  "fields": {
+    "name": "Yoga Mat",
+    "post_date": "2026-06-04T02:33:23Z",
+    "price": "10.00",
+    "description": "Non-slip, eco-friendly yoga mat made from natural rubber, providing superior grip and cushioning for all yoga styles.",
+    "category": 4,
+    "tags": [
+      3,
+      7
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 3,
+  "fields": {
+    "name": "Reusable Water Bottle",
+    "post_date": "2026-05-14T02:39:34Z",
+    "price": "13.00",
+    "description": "Double-walled stainless steel water bottle that keeps drinks cold for 24 hours and hot for 12 hours.",
+    "category": 3,
+    "tags": [
+      3,
+      5
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 4,
+  "fields": {
+    "name": "Running Shoes",
+    "post_date": "2026-06-05T02:40:22Z",
+    "price": "39.99",
+    "description": "Lightweight and breathable running shoes with responsive cushioning and a waterproof upper for all-weather performance.",
+    "category": 4,
+    "tags": [
+      1,
+      5
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 5,
+  "fields": {
+    "name": "Laptop Stand",
+    "post_date": "2026-03-11T16:39:00Z",
+    "price": "38.97",
+    "description": "Adjustable aluminum laptop stand with ergonomic design to improve posture and reduce neck strain during long work sessions.",
+    "category": 1,
+    "tags": [
+      2,
+      6
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 6,
+  "fields": {
+    "name": "Cast Iron Skillet",
+    "post_date": "2026-06-05T02:42:54Z",
+    "price": "57.99",
+    "description": "Pre-seasoned cast iron skillet that delivers even heat distribution for perfect searing, baking, and frying.",
+    "category": 3,
+    "tags": [
+      7,
+      10
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 7,
+  "fields": {
+    "name": "Graphic Tee",
+    "post_date": "2026-06-01T20:23:37Z",
+    "price": "10.00",
+    "description": "Soft cotton graphic tee featuring bold artistic prints, perfect for casual everyday wear.",
+    "category": 2,
+    "tags": [
+      1
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 8,
+  "fields": {
+    "name": "Bluetooth Speaker",
+    "post_date": "2026-06-05T02:44:25Z",
+    "price": "59.99",
+    "description": "Compact waterproof Bluetooth speaker with 360-degree sound and 12-hour battery life, perfect for outdoor adventures.",
+    "category": 1,
+    "tags": [
+      4,
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 9,
+  "fields": {
+    "name": "Journal",
+    "post_date": "2026-05-22T17:15:01Z",
+    "price": "13.00",
+    "description": "Beautifully crafted hardcover journal with thick, acid-free pages ideal for writing, sketching, and daily reflection.",
+    "category": 5,
+    "tags": [
+      2,
+      8
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 10,
+  "fields": {
+    "name": "Hiking Backpack",
+    "post_date": "2026-06-05T02:45:45Z",
+    "price": "119.99",
+    "description": "Durable 40L hiking backpack with waterproof coating, multiple compartments, and ergonomic shoulder straps for long trails.",
+    "category": 4,
+    "tags": [
+      5,
+      10
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 11,
+  "fields": {
+    "name": "Smart Watch",
+    "post_date": "2026-06-05T02:46:39Z",
+    "price": "299.99",
+    "description": "Feature-rich smartwatch with health tracking, GPS, and customizable watch faces to keep you connected on the go.",
+    "category": 1,
+    "tags": [
+      2,
+      4
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 12,
+  "fields": {
+    "name": "Denim Jacket",
+    "post_date": "2026-06-05T02:40:22Z",
+    "price": "49.99",
+    "description": "Classic slim-fit denim jacket with a timeless design that pairs effortlessly with any outfit.",
+    "category": 2,
+    "tags": [
+      7,
+      8
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 13,
+  "fields": {
+    "name": "French Press",
+    "post_date": "2026-05-07T18:36:25Z",
+    "price": "29.99",
+    "description": "Elegant stainless steel French press that brews rich, full-bodied coffee using sustainably sourced, organic-friendly materials.",
+    "category": 3,
+    "tags": [
+      7,
+      9
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 14,
+  "fields": {
+    "name": "Resistance Bands",
+    "post_date": "2026-06-05T02:49:11Z",
+    "price": "9.99",
+    "description": "Set of five resistance bands in varying tension levels, perfect for strength training and rehabilitation exercises anywhere.",
+    "category": 4,
+    "tags": [
+      1,
+      6
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 15,
+  "fields": {
+    "name": "Mechanical Keyboard",
+    "post_date": "2026-06-05T02:50:30Z",
+    "price": "79.99",
+    "description": "Tactile mechanical keyboard with customizable RGB backlighting and durable switches rated for 50 million keystrokes.",
+    "category": 1,
+    "tags": [
+      2,
+      10
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 16,
+  "fields": {
+    "name": "Linen Pants",
+    "post_date": "2026-05-05T02:39:34Z",
+    "price": "24.98",
+    "description": "Breathable and lightweight linen pants made from sustainably sourced fabric, perfect for warm weather and casual occasions.",
+    "category": 2,
+    "tags": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 17,
+  "fields": {
+    "name": "Cookbook",
+    "post_date": "2026-03-12T02:40:22Z",
+    "price": "34.99",
+    "description": "A beautifully illustrated cookbook featuring 150 wholesome recipes using organic, seasonal ingredients from around the world.",
+    "category": 5,
+    "tags": [
+      7,
+      9
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 18,
+  "fields": {
+    "name": "Desk Lamp",
+    "post_date": "2026-06-04T21:15:39Z",
+    "price": "12.99",
+    "description": "Sleek LED desk lamp with adjustable brightness levels and a flexible neck for focused task lighting anywhere.",
+    "category": 3,
+    "tags": [
+      2,
+      6
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 19,
+  "fields": {
+    "name": "Protein Powder",
+    "post_date": "2026-06-05T02:54:39Z",
+    "price": "29.94",
+    "description": "High-quality whey protein powder made from organic, grass-fed sources with no artificial flavors or sweeteners.",
+    "category": 4,
+    "tags": [
+      1,
+      9
+    ]
+  }
+},
+{
+  "model": "products.product",
+  "pk": 20,
+  "fields": {
+    "name": "Wireless Charger",
+    "post_date": "2026-06-05T02:55:59Z",
+    "price": "23.57",
+    "description": "Fast wireless charger compatible with all Qi-enabled devices, featuring a slim design and smart charging technology.",
+    "category": 1,
+    "tags": [
+      2,
+      4
+    ]
+  }
+},
+{
+  "model": "products.tag",
+  "pk": 1,
+  "fields": {
+    "name": "sale"
+  }
+},
+{
+  "model": "products.tag",
+  "pk": 2,
+  "fields": {
+    "name": "new-arrival"
+  }
+},
+{
+  "model": "products.tag",
+  "pk": 3,
+  "fields": {
+    "name": "eco-friendly"
+  }
+},
+{
+  "model": "products.tag",
+  "pk": 4,
+  "fields": {
+    "name": "wireless"
+  }
+},
+{
+  "model": "products.tag",
+  "pk": 5,
+  "fields": {
+    "name": "waterproof"
+  }
+},
+{
+  "model": "products.tag",
+  "pk": 6,
+  "fields": {
+    "name": "portable"
+  }
+},
+{
+  "model": "products.tag",
+  "pk": 7,
+  "fields": {
+    "name": "bestseller"
+  }
+},
+{
+  "model": "products.tag",
+  "pk": 8,
+  "fields": {
+    "name": "limted-edition"
+  }
+},
+{
+  "model": "products.tag",
+  "pk": 9,
+  "fields": {
+    "name": "organic"
+  }
+},
+{
+  "model": "products.tag",
+  "pk": 10,
+  "fields": {
+    "name": "heavy-duty"
+  }
+},
+{
+  "model": "products.category",
+  "pk": 1,
+  "fields": {
+    "name": "Electronics"
+  }
+},
+{
+  "model": "products.category",
+  "pk": 2,
+  "fields": {
+    "name": "Clothing"
+  }
+},
+{
+  "model": "products.category",
+  "pk": 3,
+  "fields": {
+    "name": "Kitchen & Home"
+  }
+},
+{
+  "model": "products.category",
+  "pk": 4,
+  "fields": {
+    "name": "Sports & Outdoors"
+  }
+},
+{
+  "model": "products.category",
+  "pk": 5,
+  "fields": {
+    "name": "Books & Stationary"
+  }
+}
+]
