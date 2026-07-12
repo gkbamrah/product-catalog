@@ -1,49 +1,44 @@
+# Product Catalog — Backend API
 
-#  Product Catalog
+A Django REST API for managing products, tags, and categories, built to power a React/TypeScript frontend.
 
-A Django project to model products, tags, and categories.
+**Live API:** https://product-catalog-5fux.onrender.com  
+**Frontend repo:** https://github.com/gkbamrah/product-catalog-ui
 
- 
+> Note: This is hosted on Render's free tier, which spins down after inactivity. The first request may take 30-60 seconds to wake the server.
 
-##  How to run
+## Tech Stack
+Django, Django REST Framework, PostgreSQL (via Neon), Gunicorn, Whitenoise, CORS headers
+
+## API Endpoints
+- `GET /products/api/` — list products (supports `?search=` and `?category=` query params)
+- `GET /categories/api/` — list categories
+
+## How to run locally
 
 Clone and enter repo:
-``` 
-git clone https://github.com/gkbamrah/product-catalog.git 
+git clone https://github.com/gkbamrah/product-catalog.git
 cd product-catalog
-```
 Start virtual environment:
-```
-python -m venv .venv 
-source .venv/bin/activate # Mac/Linux 
-
-.venv\Scripts\activate # Windows
-```
+python -m venv .venv
+source .venv/bin/activate  # Mac/Linux
+.venv\Scripts\activate     # Windows
 Install dependencies:
-```
 pip install -r requirements.txt
-```
+Create a `.env` file with:
+SECRET_KEY=your-secret-key
+DEBUG=True
+ALLOWED_HOSTS=localhost,127.0.0.1
+DATABASE_URL=your-local-database-url
 Run migrations:
-```
 python manage.py migrate
-```
-Create superuser:
-```
-python manage.py createsuperuser
-```
 Run the server:
-```
 python manage.py runserver
-```
-Website will be running at ```http://127.0.0.1:8000/```
 
 ## AI Usage
-
 AI was used in the following ways:
 - Creating sample data
-- Generating the HTML skeleton for the template
 - Populating the gitignore file
-- Making suggestions for code quality and conventions for maintainability
+- Suggestions for code quality, deployment configuration, and production best practices
 
-**No code was copied directly from AI sources. All suggestions made by AI tools were thoroughly researched and understood before including it.**
-
+**No code was copied directly from AI sources. All suggestions made by AI tools were thoroughly researched and understood before including them.**
