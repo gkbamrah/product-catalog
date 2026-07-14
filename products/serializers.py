@@ -12,21 +12,9 @@ class CategorySerializer(serializers.ModelSerializer):
         fields = ['id', 'name']
 
 class ProductSerializer(serializers.ModelSerializer):
-    category = serializers.PrimaryKeyRelatedField(
-        queryset=Category.objects.all(), required=False, allow_null=True
-    )
-    tags = serializers.PrimaryKeyRelatedField(
-        queryset=Tag.objects.all(), many=True, required=False
-    )
-    
-
+    category = CategorySerializer(read_only=True)
+    tags = TagSerializer(read_only=True, many=True)
 
     class Meta:
         model = Product
         fields = ['id', 'name', 'post_date', 'price', 'description', 'category', 'tags']
-    
-    def to_representation(self, instance):
-        representation = super().to_representation(instance)
-        representation['category'] = CategorySerializer(instance.category).data if instance.category else None
-        representation['tags'] = TagSerializer(instance.tags.all(), many=True).data
-        return representation
