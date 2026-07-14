@@ -21,7 +21,7 @@ Django, Django REST Framework, PostgreSQL (via Neon), Gunicorn, Whitenoise, CORS
 
 -  `GET /categories/api/` — list categories
 
-  
+-  `POST /products/api` - creates a new product  
 
 ##  How to run locally
 
